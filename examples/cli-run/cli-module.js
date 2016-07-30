@@ -5,7 +5,7 @@
 var Core = require('../../index.js');
 
 /**
- *  HTTP Server Module.
+ *  CLI Module.
  *
  *  @author Eugene A. Kalosha <ekalosha@dfusiontech.com>
  */
