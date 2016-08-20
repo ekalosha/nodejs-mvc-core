@@ -19,6 +19,7 @@ module.exports = {
     Logger: require('./lib/logger.js'),
     Model: {
         AbstractModel: require('./lib/model/abstractmodel.js'),
+        MongooseModel: require('./lib/model/mongoosemodel.js')
     },
     Modules: {
         HTTPServer: require('./lib/modules/httpserver.js'),

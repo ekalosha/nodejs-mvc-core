@@ -12,7 +12,6 @@ var Core = require('../../../../index.js');
  *  Abstract model. Define main collection interface.
  *
  *  @author Eugene A. Kalosha <ekalosha@dfusiontech.com>
- *  @abstract
  */
 class Collection2 extends Core.Model.AbstractModel {
     /**
@@ -20,9 +19,9 @@ class Collection2 extends Core.Model.AbstractModel {
      */
     constructor (collectionName) {
         // We must call super() in child class to have access to 'this' in a constructor
-        super();
+        super(collectionName);
 
-        console.log("Initializing model: %s", collectionName);
+        console.log("Initializing model: %s", this.collectionName);
     }
 
     /**
