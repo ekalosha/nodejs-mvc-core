@@ -1,7 +1,24 @@
 {
   "name": "dft-mvc-core",
-  "version": "0.0.2",
+  "description": "Implementation of MVC Design Pattern (Facade, Model, View, Controller, common libraries).",
+  "version": "0.5.2",
   "private": true,
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "homepage": "https://github.com/ekalosha/nodejs-mvc-core",
+  "url": "https://github.com/ekalosha/nodejs-mvc-core",
+  "author": "Eugene A. Kalosha <ekalosha@dfusiontech.com>",
+  "email": "ekalosha@dfusiontech.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ekalosha/nodejs-mvc-core"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ekalosha/nodejs-mvc-core/issues"
+  },
   "dependencies": {
     "async": ">=2.0.1",
     "body-parser": ">=1.15.2",
@@ -30,11 +47,5 @@
   "engines": {
     "node": ">=4.4.5",
     "npm": ">=3.10.5"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ekalosha/nodejs-mvc-core"
-  },
-  "author": "Eugene A. Kalosha <ekalosha@dfusiontech.com>",
-  "main": "index.js"
+  }
 }

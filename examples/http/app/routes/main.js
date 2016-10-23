@@ -4,6 +4,9 @@
 
 module.exports = function () {
     var routes = {
+        'all|/collection1s': 'api.js',
+        'all|/collection1s/:action': 'api.js',
+        'all|/collection1s/:id/:action': 'api.js',
         'all|/': 'index.js',
         'all|/:action': 'index.js',
     };

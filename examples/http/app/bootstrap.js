@@ -71,7 +71,7 @@ class WebInitModule extends Core.Bootstrap {
                     "isVerified" : false,
                     "firstName": "Tester",
                     "lastName": "Collectionist",
-                    notifications: ["Type1", "Type2"]
+                    "notifications": ["Type1", "Type2"]
                 };
                 collection1.insert(collection1Object, (error, item) => {
                     if (error) {
