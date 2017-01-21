@@ -2,7 +2,7 @@
   "name": "dft-mvc-core",
   "description": "Implementation of MVC Design Pattern (Facade, Model, View, Controller, common libraries).",
   "version": "0.5.2",
-  "private": true,
+  "private": false,
   "main": "index.js",
   "directories": {
     "test": "test"
