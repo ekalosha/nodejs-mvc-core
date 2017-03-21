@@ -63,6 +63,9 @@ class WebInitModule extends Core.Bootstrap {
         var collection1 = this.applicationFacade.model.collection("collection1");
         async.series([
             asyncCallback => {
+                return asyncCallback();
+
+                /*
                 var collection1Object = {
                     "token": "Hfbndhs-9485nj-fhdk",
                     "password": "PWD",
@@ -82,6 +85,7 @@ class WebInitModule extends Core.Bootstrap {
                     console.log("New item [%s]", item.id);
                     asyncCallback();
                 });
+                */
 
             },
             asyncCallback => {

@@ -20,12 +20,34 @@ class TestAPIController extends Core.Controllers.APIController {
      * @param callback
      */
     init (callback) {
+
+        // Ignore two fields
+        this._ignoredRequestFieldsMap = {isAdmin: true, isVerified: true};
+
         this._model = Core.ApplicationFacade.instance.model.collection("collection1");
 
         // Registering actions
-        // this.registerAction('action-one', 'loadActionOne');
+        this.registerAction('action-one', 'loadActionOne');
 
         callback();
+    }
+
+    /**
+     * Load Action "action-one"
+     *
+     * @param dataReadyCallback
+     */
+    loadActionOne (dataReadyCallback) {
+
+        // Set page data
+        this.data.status = "SUCCESS";
+        this.data.controller = "TestAPIController";
+        this.data.action = "loadActionOne";
+
+        this.view(Core.View.jsonView());
+
+        // Send DATA_READY event
+        dataReadyCallback(null);
     }
 
 };

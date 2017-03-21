@@ -10,10 +10,9 @@ var Core = require('../../index.js');
  *  @author Eugene A. Kalosha <ekalosha@dfusiontech.com>
  */
 var applicationFacade = Core.ApplicationFacade.instance;
-
-applicationFacade.load('bootstrap', require('./app/bootstrap.js'));
-applicationFacade.load('mongoose', Core.Modules.Mongoose);
 applicationFacade.load('server', Core.Modules.HTTPServer);
+applicationFacade.load('mongoose', Core.Modules.Mongoose);
+applicationFacade.load('bootstrap', require('./app/bootstrap.js'));
 
 // Initializing all modules
 applicationFacade.init();
