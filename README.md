@@ -14,10 +14,10 @@ NODE_ENV=environment-name
 Our server.js file will then load a config file based on that NODE_ENV value.
 
 Save your config file in this location:
-/config/env
+/config
 
 Using the example from above, our application will look for this config file:
-/config/env/environment-name
+/config/environment-name
 
 ## Application Types
 

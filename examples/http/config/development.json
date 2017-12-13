@@ -15,5 +15,9 @@
         "storage": "mongodb://127.0.0.1:27017/nodejs_mvc_core_examples_http?ttl=14400",
         "secret": "a1254372-bc3452df-75643902-ba654d7f",
         "name": "nodejs-mvc-core-http.sid"
+    },
+    "server": {
+        "port": "3007",
+        "host": "::"
     }
 }
