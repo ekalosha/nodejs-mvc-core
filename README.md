@@ -84,7 +84,7 @@ Example of Bootstrap Class:
 // Using STRICT mode for ES6 features
 "use strict";
 
-var Core = require('../../../index.js');
+var Core = require('dft-mvc-core');
 
 /**
  * Importing Application Facade
