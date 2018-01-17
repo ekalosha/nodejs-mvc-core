@@ -18,6 +18,7 @@
 
      require('./config.js');
      require('./logger.js');
+     require('./events.js');
 
 
 
