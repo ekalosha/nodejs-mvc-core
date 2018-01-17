@@ -1,13 +1,19 @@
 
 "use strict";
 
+/**
+ *
+ */
 var config = require('../../lib/utilities/config');
 
 /**
- * Node.js modules
+ *
  */
 var expect = require('chai').expect;
 
+/**
+ * TESTS
+ */
 describe('utility CONFIG', function () {
 
     it('shuld exist', function () {
