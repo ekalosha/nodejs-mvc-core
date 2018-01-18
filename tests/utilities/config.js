@@ -28,6 +28,12 @@ describe('utility CONFIG', function () {
         expect(Configuration.parseENV,  "parseENV").to.be.a('function');
     });
 
+    it('has static props', function () {
+        expect(Configuration.dirName,  "dirName").to.be.a('string');
+        expect(Configuration.envName,  "envName").to.be.a('string');
+        expect(Configuration.instance,  "instance").to.not.be.undefined;
+    });
+
     it('Configuration static parseENV', function () {
         expect(Configuration.parseENV).to.be.a('function');
         // read
@@ -52,15 +58,5 @@ describe('utility CONFIG', function () {
         Configuration.replace(CustomConfiguration);
         expect(Configuration.instance.testsProperties, 'custom YES').to.be.true;
     });
-    // it('Configuration read environment => test', function () {
-    //     var env = config.Configuration.environment(__dirname+'/test.env');
-    //     expect(env).to.eql({
-    //         config_e: 'ENV',
-    //         DB_USER: 'root',
-    //         DB_PASS: 's1mpl3',
-    //         DB_HOST: 'localhost',
-    //     });
-    //
-    // });
 
 });
