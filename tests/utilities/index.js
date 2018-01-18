@@ -16,10 +16,10 @@
  */
  describe('test UTILITIES:', function () {
 
-     require('./config.js');
      require('./logger.js');
-     require('./events.js');
+     require('./config.js');
 
+     // require('./coreEvent.js');
 
 
  });
