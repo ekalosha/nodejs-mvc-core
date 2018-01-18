@@ -37,8 +37,7 @@ describe('utility CONFIG', function () {
     });
 
     it('method "replace" => test', function () {
-        expect(config.instance.testsProperties).to.not.be.true;
-
+        expect(config.instance.testsProperties, 'defaults NOT').to.not.be.true;
         class CustomConfiguration extends config.Configuration {
             constructor () {
                 super();
@@ -46,8 +45,22 @@ describe('utility CONFIG', function () {
             }
         }
         config.replace(CustomConfiguration);
+        expect(config.instance.testsProperties, 'custom YES').to.be.true;
+    });
 
-        expect(config.instance.testsProperties).to.be.true;
+    it('Configuration static environment', function () {
+        expect(config.Configuration.environment).to.be.a('function');
+    });
+
+    it('Configuration read environment => test', function () {
+        var env = config.Configuration.environment(__dirname+'/test.env');
+        expect(env).to.eql({
+            config_e: 'ENV',
+            DB_USER: 'root',
+            DB_PASS: 's1mpl3',
+            DB_HOST: 'localhost',
+        });
+
     });
 
 });
