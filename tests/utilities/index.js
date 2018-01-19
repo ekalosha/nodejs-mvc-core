@@ -17,9 +17,9 @@
  describe('test UTILITIES:', function () {
 
      require('./logger.js');
-     require('./config.js');
+     require('./configuration.js');
+     require('./coreevent.js');
 
-     // require('./coreEvent.js');
 
 
  });
