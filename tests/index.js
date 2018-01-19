@@ -6,7 +6,7 @@
  */
 describe('MVC Core', function () {
 
-    require('./utilities/index.js');
+    require('./utilities/utilities.js');
 
 
 

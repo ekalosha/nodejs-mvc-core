@@ -4,7 +4,7 @@
 /**
  *
  */
-var Configuration = require('../../lib/utilities/config');
+var Configuration = require('../../lib/utilities/configuration');
 
 /**
  *
