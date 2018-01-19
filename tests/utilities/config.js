@@ -31,7 +31,11 @@ describe('utility CONFIG', function () {
     it('has static props', function () {
         expect(Configuration.dirName,  "dirName").to.be.a('string');
         expect(Configuration.envName,  "envName").to.be.a('string');
-        expect(Configuration.instance,  "instance").to.not.be.undefined;
+        expect(Configuration.instance,  "instance").to.be.a('object');
+    });
+
+    it('"instance" instanceof "Configuration"', function () {
+        expect(Configuration.instance instanceof Configuration).to.be.true;
     });
 
     it('Configuration static parseENV', function () {
@@ -57,6 +61,12 @@ describe('utility CONFIG', function () {
         }
         Configuration.replace(CustomConfiguration);
         expect(Configuration.instance.testsProperties, 'custom YES').to.be.true;
+        expect(Configuration.instance instanceof Configuration, 'should stay instanceof "Configuration"').to.be.true;
+    });
+
+    it('"instance" should has methods', function () {
+        expect(Configuration.instance.init, '"init" !!!').to.be.a('function');
+        expect(Configuration.instance.environment, '"environment" !!!').to.be.a('function');
     });
 
 });
