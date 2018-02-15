@@ -1,0 +1,40 @@
+{
+    "tags": {
+        "allowUnknownTags": true,
+        "dictionaries": ["jsdoc", "closure"]
+    },
+    "source": {
+        "include": ["index.js", "./lib"],
+        "includePattern": ".+\\.js(doc)?$",
+        "excludePattern": "(^|\\/|\\\\)_"
+    },
+    "plugins": [],
+    "opts": {
+        "template": "node_modules/tui-jsdoc-template",
+        "encoding": "utf8",
+        "recurse": true,
+        "verbose": true
+    },
+    "templates": {
+        "template-DOC": "https://github.com/nhnent/tui.jsdoc-template#custom-styles",
+        "useCollapsibles": true,
+        "name": "Core Documentation",
+        "footerText": "Core (s-core)",
+        "logo": {
+            "url": "DEFINE LOGO IMAGE",
+            "width": "150px",
+            "height": "13px",
+            "link": "DEFINE LINK"
+        },
+        "tabNames": {
+            "api": "API",
+            "tutorials": "Examples"
+        },
+        "cleverLinks": true,
+        "monospaceLinks": true,
+        "default": {
+            "outputSourceFiles": true,
+            "includeDate": true
+        }
+    }
+}

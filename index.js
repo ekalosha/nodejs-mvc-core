@@ -1,36 +1,10 @@
 
-// Using STRICT mode for ES6 features
-"use strict";
+'use strict';
+
+const Core = require('./lib/core.js');
 
 /**
- * Initializing application facade before export
+ * @description export Core
+ * @public
  */
-module.exports = {
-    ApplicationEvent: require('./lib/facade.js').ApplicationEvent,
-    ApplicationFacade: require('./lib/facade.js').ApplicationFacade,
-    Bootstrap: require('./lib/bootstrap.js'),
-    Controller: require('./lib/controller.js').Controller,
-    Controllers: {
-        // CRUDController: require('./lib/controller/crudcontroller.js'),
-        StateController: require('./lib/controller/statecontroller.js'),
-        APIController: require('./lib/controller/apicontroller.js')
-    },
-    Error: {
-        BaseError: require('./lib/error/error.js'),
-        HTTPError: require('./lib/error/httperror.js'),
-        LoaderError: require('./lib/error/loadererror.js')
-    },
-    ExecutionState: require('./lib/controller.js').ExecutionState,
-    Logger: require('./lib/logger.js'),
-    Model: {
-        AbstractModel: require('./lib/model/abstractmodel.js'),
-        MongooseModel: require('./lib/model/mongoosemodel.js')
-    },
-    Modules: {
-        HTTPServer: require('./lib/modules/httpserver.js'),
-        Mongoose: require('./lib/modules/mongoose.js')
-    },
-    ModuleView: require('./lib/view/moduleview.js').ModuleView,
-    ViewType: require('./lib/view/view.js').ViewType,
-    View: require('./lib/view/view.js').View
-};
+module.exports = Core;

@@ -1,7 +1,0 @@
-language: node_js
-node_js:
-  - "4.2.1"
-services:
-  - mongodb
-  - redis-server
-script: APPLICATION_ENV=test mocha
